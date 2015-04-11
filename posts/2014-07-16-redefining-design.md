@@ -13,7 +13,8 @@ So, last week I stumbled across [another post](https://medium.com/@trevorconnoll
 
 The post contained Google's definition of design:
 
-**"A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is made."** *— Google*
+> "A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is made."
+*— Google*
 
 *Before.* That's the word that struck me as odd. I've been working the last six months creating a new system and [trying to find a process](http://eldh.co/finding-a-process) that allows us to work in a nice agile way. We build by iterating. Build, improve, refine. Build, improve, refine.
 

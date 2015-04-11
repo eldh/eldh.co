@@ -5,7 +5,7 @@ var rssPlugin = require('antwar-rss-plugin');
 module.exports = {
   output: 'build',
   name: 'eldh.co',
-  baseUrl: 'https://eldh.co/',
+  baseUrl: 'http://eldh.co/',
   blogRoot: 'blog',
   author: {
     name: 'Andreas Eldh',
@@ -23,7 +23,7 @@ module.exports = {
       {title: 'Home', path: '/'},
       {title: 'Blog', path: '/blog'}
     ],
-    analyticsId: 'UA-XXXXXX-1',
+    analyticsId: 'UA-41786834-1',
     customStyles: 'specific.scss'
   }
 };
