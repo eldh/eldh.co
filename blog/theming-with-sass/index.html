@@ -1,0 +1,46 @@
+<html><head><title>Theming with SASS / eldh.co</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"><link rel="icon" type="image/png" href="/assets/img/favicon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><link rel="stylesheet" href="/assets/main.css"></head><body><div><div class="nav__wrapper"><input type="checkbox" class="nav__toggle" id="nav__toggle"><label class="nav__toggle-label" for="nav__toggle"></label><nav class="nav"><a class="nav__link" href="/">Home</a><a class="nav__link" href="/blog">Blog</a></nav></div><main role="main"><div class="post"><h1 class="post__heading">Theming with SASS</h1><div class="post__content"><div><p>At my current project I'm helping <a href="http://kambi.com">Kambi</a> build their responsive sports betting client (an in-depth look at the project can be found <a href="http://blog.14islands.com/post/52546836134/betting-on-responsive">in this post</a>).</p>
+<p>We have a whole bunch of different themes for different customers of the app. As functionality (and associated styles) were added to the app and the number of customers grew, we wanted to find an efficient way of structuring our themes.</p>
+<p>Let me just say, before I get more into the specifics of our app, that we pretty much follow the tips about SASS theming outlined in <a href="http://mikefowler.me/thoughts/efficient-theming-with-sass/">this post by Mike Folwer</a>. My main focus will be on the problems facing a large app, with many themes and a lot of styles.</p>
+<h2>The old stuff</h2>
+<p>The codebase had recently been converted to <em>Sass</em> from <em>LESS</em>. The code structure was based on a &quot;css mindset&quot;. We hardly used variables, mixins, extends or functions, and all of the theming was done with normal css overrides.</p>
+<p>This was the file structure we had (some things are ommited for clarity):</p>
+<pre><code>common
+- module1.scss
+- module2.scss
+- …etc
+theme
+- overwrite.scss
+- paint.scss
+</code></pre>
+<p>All the base styling was divided by module in the <em>common</em> folder and each theme had overrides for all color declarations – background color, text color, shadows etc. – in <em>paint.scss</em> and any non-color overrides was put in <em>overwrite.scss</em>. The downside of this was that we had to overwrite most of the color declarations in the app for each new theme. It was also very hard to maintain. When we added a new feature or changed the structure of the html, every theme had to be seperately updated.</p>
+<p>The overall structure of the css was also really bad, with selectors that was way too specific and complicated and a lot of redundant code.</p>
+<p>We had to get away from this.</p>
+<h2>New thinking</h2>
+<p>First of all we had to set up some ground rules. In order to keep the theming process from becoming to complicated we needed to limit <em>how</em> theming could be done. This is a tricky decision. If you limit theming too much all themes will look pretty much the same, which will not sit well with our customers. If you allow the theming to be too loose you will end up with a hard-to-maintain mess.</p>
+<p>SASS has some awesome features to use for theming, like variables, mixins and color functions. We decided to go full-on with variables. All the colors used in the css should be set using variables.</p>
+<p>The new structure is pretty close to what we had before, but with a few notable changes:</p>
+<pre><code>common
+- variables.scss
+- module1.scss
+- module2.scss
+- …etc
+theme
+- variables.scss
+- overwrite.scss
+</code></pre>
+<p>The <em>commons/variables.scss</em> uses the !default keyword for every variable, whichmeans we can overwrite variables anywhere without causing problems with inherited values.</p>
+<p>For example, if this is in our common <em>variables.scss</em>:</p>
+<pre><code>$some-color: #fff !default;
+$some-other-color: $some-color !default;
+</code></pre>
+<p>Then we can put the following in our theme <em>variables.scss</em>:</p>
+<pre><code>$some-color: #aaa;
+</code></pre>
+<p>Which will give the value <strong>#aaa</strong> to <strong>$some-other-color</strong>, just like we want to. But we can also set <strong>$some-other-color</strong> to something else in the theme variables file.</p>
+<p>This allows us to set a few brand specific colors that cascade through our theming files and have all colors used in the app to be calculated via Sass functions. Pretty neat, and this is probably more or less how we will make themes in the future.</p>
+<p>The existing themes were not easily translated into the new format and we have spent <em>A LOT</em> of time setting variable values. There are some 700 variables in the main variables file, and each theme overrides between ten and thirty variables.</p>
+<p>With this setup, we have a much more scalable architecture, refactoring is a lot easier, and it's easier to make the themes consistant. If we want to make changes to the html or selectors we just have to update stuff in one place. When we add something new we make sure to inherit variable values so that no theme-specific updates will have to be made. And all this without actually sacrificing any theming flexibility.</p>
+<p>This will help us a lot when we add functionality to the app and making new themes will be as easy as setting a handfull of variable values.</p>
+<p>The app is live on a bunch of places, for example <a href="https://mobile.888sport.com/en/offering.htm">here</a> and <a href="https://touch.unibet.com/client-start/sportsbook">here</a>.</p>
+<p>Any questions or suggestions are more than welcome. Just contact me on <a href="http://www.twitter.com/eldh">twitter</a>.</p>
+</div></div><time datetime="2013-06-20" class="post__moment">20 Jun 2013</time><div class="post__author">Authored by Andreas Eldh</div></div></main><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-41786834-1', 'auto');ga('send', 'pageview');</script><link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900,400italic,600italic,900italic" rel="stylesheet" type="text/css"></div></body></html>
