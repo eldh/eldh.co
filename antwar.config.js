@@ -1,27 +1,60 @@
 'use strict';
 
 var rssPlugin = require('antwar-rss-plugin');
+var prevnextPlugin = require('antwar-prevnext-plugin');
+var highlightPlugin = require('antwar-highlight-plugin');
 
 module.exports = {
   output: 'build',
   name: 'eldh.co',
-  baseUrl: 'http://eldh.co/',
-  blogRoot: 'blog',
-  author: {
-    name: 'Andreas Eldh',
-    email: 'andreas.eldh@gmail.com'
-  },
+  author: 'Andreas Eldh',
   deploy: {
     branch: 'gh-pages',
   },
   plugins: [
-    rssPlugin
+    rssPlugin(),
+    prevnextPlugin(),
+    highlightPlugin({
+      style: function() {
+        require('highlight.js/styles/github.css');
+      },
+      languages: ['javascript'],
+    })
   ],
+  paths: {
+    '/': {
+      path: function() {
+        return require.context('./pages');
+      }
+    },
+    blog: {
+      path: function() {
+        return require.context('./posts', true, /^\.\/.*\.md$/);
+      },
+      draft: function() {
+        return require.context('./drafts', true, /^\.\/.*\.md$/);
+      },
+      processItem: {
+        url: function(o) {
+          if(o.file.url) {
+            return o.file.url;
+          }
+          var page = o.fileName.split('.')[0].split('-').splice(3).join('-');
+          return o.sectionName + '/' + page;
+        },
+        date: function(o) {
+          return o.fileName.split('.')[0].split('-').splice(0,3).join('-');
+        }
+      },
+      layout: 'blog',
+      title: 'Blog posts',
+    }
+  },
   theme: {
-    name: 'antwar-default-theme',
+    name: 'antwar-clean-theme',
     navigation: [
-      {title: 'Home', path: '/'},
-      {title: 'Blog', path: '/blog'}
+      {title: 'Home', url: '/'},
+      {title: 'Blog', url: '/blog'}
     ],
     analyticsId: 'UA-41786834-1',
     customStyles: 'specific.scss'

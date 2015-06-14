@@ -4,8 +4,10 @@
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
   "version": "0.2.6",
   "dependencies": {
-    "antwar-rss-plugin": "^0.0.4",
-    "antwar-default-theme": "^0.2.0"
+    "antwar-default-theme": "^0.2.0",
+    "antwar-prevnext-plugin": "^0.1.2",
+    "highlight.js": "^8.6.0",
+    "antwar-rss-plugin": "^0.0.4"
   },
   "devDependencies": {},
   "repository": {
