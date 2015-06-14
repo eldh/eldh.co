@@ -21,6 +21,11 @@ module.exports = {
       languages: ['javascript'],
     })
   ],
+  handlers: {
+    sectionIndex: function () {
+      return require('./SectionIndex.coffee');
+    },
+  },
   paths: {
     '/': {
       path: function() {
