@@ -12,8 +12,8 @@ module.exports = {
     branch: 'gh-pages',
   },
   plugins: [
-    rssPlugin(),
-    prevnextPlugin(),
+    // rssPlugin(),
+    // prevnextPlugin(),
     highlightPlugin({
       style: function() {
         require('highlight.js/styles/github.css');
@@ -61,6 +61,7 @@ module.exports = {
       {title: 'Home', url: '/'},
       {title: 'Blog', url: '/blog'}
     ],
+    logo: function(){ return require('./logo.svg')},
     analyticsId: 'UA-41786834-1',
     customStyles: 'specific.scss'
   }

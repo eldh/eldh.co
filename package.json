@@ -1,22 +1,23 @@
 {
-  "name": "antwar-boilerplate",
-  "description": "Boilerplate for Antwar",
-  "author": "Juho Vepsalainen <bebraw@gmail.com>",
+  "name": "eldh.co",
+  "description": "Eldh.co",
+  "author": "Andreas Eldh <andreas.eldh@gmail.com>",
   "version": "0.2.6",
   "dependencies": {
-    "antwar-default-theme": "^0.2.0",
+    "antwar": "^0.5.2",
+    "antwar-clean-theme": "^0.0.1",
     "antwar-prevnext-plugin": "^0.1.2",
-    "highlight.js": "^8.6.0",
-    "antwar-rss-plugin": "^0.0.4"
+    "antwar-rss-plugin": "^0.0.4",
+    "highlight.js": "^8.6.0"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/antwarjs/boilerplate.git"
+    "url": "https://github.com/eldh.co.git"
   },
-  "homepage": "https://github.com/antwarjs/boilerplate",
+  "homepage": "https://github.com/eldh.co",
   "bugs": {
-    "url": "https://github.com/antwarjs/boilerplate/issues"
+    "url": "https://github.com/eldh.co/issues"
   },
   "keywords": [
     "antwar",
