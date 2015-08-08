@@ -11,6 +11,16 @@ module.exports = {
   deploy: {
     branch: 'gh-pages',
   },
+  assets: [
+    {
+      from: 'assets',
+      to: 'assets',
+    },
+    {
+      from: './CNAME',
+      to: './',
+    }
+  ],
   plugins: [
     // rssPlugin(),
     // prevnextPlugin(),
