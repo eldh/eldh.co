@@ -1,27 +1,58 @@
 {
   "name": "eldh.co",
-  "description": "Eldh.co",
+  "description": "eldh.co",
+  "version": "1.0.0",
   "author": "Andreas Eldh <andreas.eldh@gmail.com>",
-  "version": "0.2.6",
   "dependencies": {
-    "antwar": "^0.5.2",
-    "antwar-clean-theme": "^0.0.1",
-    "antwar-prevnext-plugin": "^0.1.2",
-    "antwar-rss-plugin": "^0.0.4",
-    "highlight.js": "^8.6.0"
+    "emotion": "^9.2.6",
+    "emotion-server": "^9.2.6",
+    "gatsby": "next",
+    "gatsby-plugin-emotion": "^2.0.0-beta.3",
+    "gatsby-plugin-feed": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-manifest": "^1.0.27",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-remark-copy-linked-files": "next",
+    "gatsby-remark-images": "next",
+    "gatsby-remark-prismjs": "next",
+    "gatsby-remark-responsive-iframe": "next",
+    "gatsby-remark-smartypants": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-sharp": "next",
+    "lodash": "^4.17.10",
+    "prismjs": "^1.15.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.6",
+    "react-helmet": "^5.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-plugin-react": "^7.10.0",
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.14.0"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eldh.co.git"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
-  "homepage": "https://github.com/eldh.co",
-  "bugs": {
-    "url": "https://github.com/eldh.co/issues"
-  },
-  "keywords": [
-    "antwar",
-    "boilerplate"
-  ],
-  "licenses": "MIT"
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+  }
 }

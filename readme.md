@@ -1,5 +1,9 @@
-# Antwar boilerplate
+# gatsby-starter-blog
+Gatsby starter for creating a blog
 
-A boilerplate for [React](https://github.com/antwarjs/antwar).
+Install this starter (assuming Gatsby is installed) by running from your CLI:
 
-Very much alpha.
+`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+
+## Running in development
+`gatsby develop`
