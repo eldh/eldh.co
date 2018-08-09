@@ -1,0 +1,1 @@
+{"data":{"site":{"siteMetadata":{"title":"Gatsby Starter Blog","author":"Kyle Mathews"}},"markdownRemark":{"id":"ab13c463-6ee8-5bb5-ba45-1e87a844bb5e","html":"<h1>Hi</h1>\n<p>Hello</p>","frontmatter":{"title":"Hello World","date":"May 01, 2018"}}},"pageContext":{"slug":"/test-post/","previous":{"fields":{"slug":"/hi-folks/"},"frontmatter":{"title":"New Beginnings"}},"next":null}}
