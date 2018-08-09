@@ -9,7 +9,13 @@ import Layout from '../components/Layout'
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.blogTitle')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, 'props.data.allMarkdownRemark.edges').filter(
+      ({
+        node: {
+          frontmatter: { language },
+        },
+      }) => language !== 'swedish'
+    )
 
     return (
       <Layout location={this.props.location}>
@@ -62,6 +68,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            language
           }
         }
       }

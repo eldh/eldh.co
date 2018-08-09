@@ -1,13 +1,15 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import Base from '../components/Base'
 import TextContent from '../components/TextContent'
+import Links from '../components/Links'
 
 class Index extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
       <Base>
@@ -43,6 +45,7 @@ class Index extends React.Component {
               <a href="mailto:andreas.eldh@gmail.com">{'get in touch!'}</a>
             </span>
           </p>
+          <Links />
         </TextContent>
       </Base>
     )
@@ -50,3 +53,13 @@ class Index extends React.Component {
 }
 
 export default Index
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
