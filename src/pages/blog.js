@@ -31,7 +31,6 @@ class BlogIndex extends React.Component {
             lang: 'en',
           }}
         />
-        <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
