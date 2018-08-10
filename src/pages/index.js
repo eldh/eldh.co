@@ -4,8 +4,16 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Base from '../components/Base'
+import AELogo from '../components/AELogo'
 import TextContent from '../components/TextContent'
 import Links from '../components/Links'
+import styled, { css } from 'react-emotion'
+
+const Logo = styled(AELogo)(css`
+  margin: 2rem auto 3rem;
+  width: 8rem;
+  height: 8rem;
+`)
 
 class Index extends React.Component {
   render() {
@@ -27,6 +35,7 @@ class Index extends React.Component {
           }}
         />
         <TextContent>
+          <Logo />
           <p>
             {
               "I'm Andreas Eldh, a freelance designer, developer and problem solver from Stockholm."
