@@ -53,6 +53,7 @@ module.exports = {
         short_name: 'eldh.co',
         start_url: '.',
         background: '#fff',
+        background_color: '#fff',
         theme_color: '#fff',
         display: 'minimal-ui',
         icon: './src/favicon.png', // This path is relative to the root of the site.
@@ -71,6 +72,7 @@ module.exports = {
         dir: 'auto',
         lang: 'en-US',
         background: '#fff',
+        background_color: '#fff',
         theme_color: '#fff',
         display: 'minimal-ui',
         orientation: 'any',

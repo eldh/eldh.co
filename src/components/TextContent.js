@@ -9,7 +9,7 @@ const styles = css`
 
 class TextContent extends React.Component {
   render() {
-    return <div className={styles}>{this.props.children}</div>
+    return <main className={styles}>{this.props.children}</main>
   }
 }
 

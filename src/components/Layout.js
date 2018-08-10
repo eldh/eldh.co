@@ -3,6 +3,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Base from './Base'
 import TextContent from './TextContent'
+import { css } from 'emotion'
+
+const styles = css`
+  padding-bottom: 2rem;
+`
+
 class Layout extends React.Component {
   render() {
     const { location, children } = this.props
@@ -10,11 +16,11 @@ class Layout extends React.Component {
 
     const header =
       location.pathname === blogRootPath ? (
-        <h1>
+        <h1 className={styles}>
           <Link to={'/'}>eldh.co</Link>
         </h1>
       ) : (
-        <h3>
+        <h3 className={styles}>
           <Link to={'/blog'}>eldh.co blog</Link>
         </h3>
       )

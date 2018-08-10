@@ -3,8 +3,9 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/ShortBio'
 import Layout from '../components/Layout'
+import QuietText from '../components/QuietText'
+import { css } from 'emotion'
 
 class BlogIndex extends React.Component {
   render() {
@@ -34,12 +35,23 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <div
+              key={node.fields.slug}
+              className={css`
+                margin: 0 0 1rem;
+              `}
+            >
+              <QuietText
+                className={css`
+                  margin: 0;
+                `}
+              >
+                {node.frontmatter.date}
+              </QuietText>
               <h3>
                 <Link to={node.fields.slug}>{title}</Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              {/* <p dangerouslySetInnerHTML={{ __html: node.excerpt }} /> */}
             </div>
           )
         })}

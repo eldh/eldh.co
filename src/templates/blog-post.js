@@ -5,7 +5,7 @@ import get from 'lodash/get'
 
 import ShortBio from '../components/ShortBio'
 import Layout from '../components/Layout'
-import PrevNext from '../components/PrevNext'
+import QuietText from '../components/QuietText'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -24,11 +24,9 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
+        <QuietText>{post.frontmatter.date}</QuietText>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <ShortBio />
-
-        <PrevNext {...this.props.pageContext} />
       </Layout>
     )
   }

@@ -7,7 +7,7 @@ injectGlobal`
     padding: 0;
     box-sizing: border-box;
   }
-  div {
+  div, main {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
@@ -15,16 +15,20 @@ injectGlobal`
   p, ul {
     margin-bottom: 1rem;
   }
+  a, a:visited {
+    text-decoration: none;
+    color: #55d;
+  }
   li {
     margin-bottom: 0.5rem;
     
   }
-  html, body {
-    font-family: "-apple-system",
+  body {
+    font-family: -apple-system,
       "BlinkMacSystemFont",
       "Segoe UI",
       "Roboto",
-      "sans-serif",
+      sans-serif,
       "Apple Color Emoji",
       "Segoe UI Symbol";
   }`
