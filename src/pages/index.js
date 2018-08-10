@@ -43,7 +43,7 @@ class Index extends React.Component {
           </p>
           <p>
             {
-              'I have built things together with organizations ranging from small startups to government agencies and Fortune 500 companies. Nowadays I mostly use React (Native) & ReasonML to build ambitious applications.'
+              'I have built things together with organizations ranging from small startups to government agencies and Fortune 500 companies. Lately I have focused on using React (Native) & ReasonML to build ambitious applications.'
             }
           </p>
           <p>
