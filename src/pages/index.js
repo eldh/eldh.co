@@ -13,6 +13,7 @@ const Logo = styled(AELogo)(css`
   margin: 2rem auto 3rem;
   width: 8rem;
   height: 8rem;
+  transition: fill 50ms linear;
 `)
 
 class Index extends React.Component {
