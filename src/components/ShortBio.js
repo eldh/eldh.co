@@ -1,12 +1,12 @@
 import React from 'react'
 import QuietText from './QuietText'
-import { css } from 'emotion'
+import { css } from '@emotion/core'
 
 export default class ShortBio extends React.Component {
   render() {
     return (
       <QuietText
-        className={css`
+        css={css`
           padding: 1rem 0;
         `}
       >

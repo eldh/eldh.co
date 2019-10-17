@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from '@emotion/core'
 
 const liStyles = css`
   display: flex;
@@ -32,9 +32,9 @@ const links = [
 class Links extends React.Component {
   render() {
     return (
-      <ul className={ulStyles}>
+      <ul css={ulStyles}>
         {links.map(({ name, href }) => (
-          <li className={liStyles} key={href}>
+          <li css={liStyles} key={href}>
             <a href={href}>{name}</a>
           </li>
         ))}

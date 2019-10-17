@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/Layout'
 import QuietText from '../components/QuietText'
-import { css } from 'emotion'
+import { css } from '@emotion/core'
 
 class BlogIndex extends React.Component {
   render() {
@@ -37,12 +37,12 @@ class BlogIndex extends React.Component {
           return (
             <div
               key={node.fields.slug}
-              className={css`
+              css={css`
                 margin: 0 0 1rem;
               `}
             >
               <QuietText
-                className={css`
+                css={css`
                   margin: 0;
                 `}
               >

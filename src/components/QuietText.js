@@ -1,6 +1,6 @@
 import React from 'react'
-import { css } from 'emotion'
-import styled from 'react-emotion'
+import { css } from '@emotion/core'
+import styled from '@emotion/styled'
 
 const QuietP = styled('p')(css`
   color: #555;

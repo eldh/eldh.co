@@ -7,7 +7,8 @@ import Base from '../components/Base'
 import AELogo from '../components/AELogo'
 import TextContent from '../components/TextContent'
 import Links from '../components/Links'
-import styled, { css } from 'react-emotion'
+import { css } from '@emotion/core'
+import styled from '@emotion/styled'
 
 const Logo = styled(AELogo)(css`
   margin: 2rem auto 3rem;

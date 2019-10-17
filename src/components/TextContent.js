@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from '@emotion/core'
 
 const styles = css`
   max-width: 600px;
@@ -9,7 +9,7 @@ const styles = css`
 
 class TextContent extends React.Component {
   render() {
-    return <main className={styles}>{this.props.children}</main>
+    return <main css={styles}>{this.props.children}</main>
   }
 }
 
