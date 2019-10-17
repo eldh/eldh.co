@@ -85,6 +85,20 @@ class Base extends React.Component {
               body {
                 background-color: #222;
                 color: #eee;
+                overscroll-behavior: none;
+                :before {
+                  content: '';
+                  width: 100vw;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  height: 0;
+                  z-index: 1;
+                  overscroll-behavior: none;
+                  box-shadow: 0 0 50px 5px rgb(0, 0, 0, 0.2),
+                    0 0 20px 2px rgb(0, 0, 0, 0.3),
+                    0 0 10px 2px rgb(0, 0, 0, 0.1);
+                }
               }
               a,
               a:visited {
