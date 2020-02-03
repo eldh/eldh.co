@@ -1,1 +1,0 @@
-{"data":{"site":{"siteMetadata":{"title":"Gatsby Starter Blog"}},"allMarkdownRemark":{"edges":[{"node":{"excerpt":"Hi Hello","fields":{"slug":"/test-post/"},"frontmatter":{"date":"01 May, 2018","title":"Hello World"}}}]}},"pageContext":{}}

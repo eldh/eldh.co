@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[eldh.co]]></title><description><![CDATA[I'm Andreas. I make things on the internet.]]></description><link>https://eldh.co</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Oct 2019 20:55:32 GMT</lastBuildDate><item><title><![CDATA[React Europe 2015]]></title><description><![CDATA[After three full days of talks and chats on the topic of one specific javascript framework you would perhaps expect to have a feeling that…]]></description><link>https://eldh.co/2015-07-04-react-europe-2015/</link><guid isPermaLink="false">https://eldh.co/2015-07-04-react-europe-2015/</guid><pubDate>Sat, 04 Jul 2015 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After three full days of talks and chats on the topic of one specific javascript framework you would perhaps expect to have a feeling that you have covered every possible aspect of this certain framework, it’s present, past and future.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[eldh.co]]></title><description><![CDATA[I'm Andreas. I make things on the internet.]]></description><link>https://eldh.co</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Feb 2020 20:52:51 GMT</lastBuildDate><item><title><![CDATA[Blurred vision]]></title><description><![CDATA[I had eye surgery a while back, more specifically a treatment called cross-linking. As a result my vision has been really bad for a couple…]]></description><link>https://eldh.co/blurred-vision/</link><guid isPermaLink="false">https://eldh.co/blurred-vision/</guid><pubDate>Tue, 04 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I had eye surgery a while back, more specifically a treatment called &lt;a href=&quot;https://en.wikipedia.org/wiki/Corneal_collagen_cross-linking&quot;&gt;cross-linking&lt;/a&gt;. As a result my vision has been really bad for a couple of weeks – like looking through frosted glass. It has been frustrating to not be able to read, watch tv or write code, but at the same time it’s been very interesting to see how different accessibility tools worked for me in this scenario.&lt;/p&gt;
+&lt;p&gt;I found some things really helpful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The built-in zoom feature in web browsers are awesome. Don’t fuck it up.&lt;/li&gt;
+&lt;li&gt;The iOS adaptive text size is great and I wish MacOS had the same feature. Right now Electron apps are easier to use than native apps because you can zoom just like in a browser.&lt;/li&gt;
+&lt;li&gt;Dark mode makes it so much easier to read text. Those writing it off as a useless gimmick have not considered its importance for accessibility.&lt;/li&gt;
+&lt;li&gt;Contrast is important. Make sure your text has enough contrast and consider adding a specific high contrast mode. Heavily saturated text is also harder to read, so go light when adding coloured text.&lt;/li&gt;
+&lt;li&gt;Focus states need to stand out a lot. This is not the place to just add a subtle border.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I’m lucky enough to have reduced vision only temporarily. Others have to live with the apps you make all their lives. Make it enjoyable for them.&lt;/p&gt;
+&lt;p&gt;Of course, this is not an exhaustive list. There are a lot of different accessibility features you should support that I have not had to use this time around.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;One thing that took me by surprise after the surgery was how it affected my thinking. The increased friction when reading and writing really hurt my ability to process information. Navigating between and within files took a bit longer than usual, but keeping track of what I was looking for and the context I was in became much harder.&lt;/p&gt;
+&lt;p&gt;I had to use too much brain power just to register the words that was on the screen, and there was not enough capacity left for me to think about the important things. This made me realise why I dislike apps that have a bad reading experience – they force my brain to waste capacity that could have been used for the tasks.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Designing an experience that is enjoyable for everyone is fundamental for allowing your users to get the most out of your app. Unfortunately, accessibility is not considered a core aspect of the design process in most companies – in the best case it’s an afterthought or something that’s tackled only at the coding level, in most cases accessibility is completely overlooked.&lt;/p&gt;
+&lt;p&gt;I think the key to improving accessibility is to improve the tooling. Both design tools and coding tools needs to do much more to make it easier to create accessible, enjoyable apps. Initiatives like &lt;a href=&quot;https://reacttraining.com/reach-ui/&quot;&gt;Reach UI&lt;/a&gt; and &lt;a href=&quot;https://web.dev/accessibility-scoring/&quot;&gt;Lighthouse&lt;/a&gt; are great, but there is much more to be done at every level of the product development process.&lt;/p&gt;
+&lt;p&gt;Some things I would like to see:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Static design tools (Figma, Sketch, etc.) should include simulators for different types of visual impairments.&lt;/li&gt;
+&lt;li&gt;Interactive tools (Framer, etc.) should support accessibility features like focus states and keyboard navigation.&lt;/li&gt;
+&lt;li&gt;Code level tools (webflow, browser dev tools, etc.) should enforce accessibility features (aria roles, labels, semantic html, focus management etc).&lt;/li&gt;
+&lt;li&gt;Frameworks (React Native, Gatsby, Next.js, etc.) should have high-quality accessibility checks built into the default tooling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I realise there are a bunch of other problems that have a higher priority at any given point in time. We take short-cuts, we tackle it later.&lt;/p&gt;
+&lt;p&gt;But there’s no quick fix. Accessibility needs to be at the core of what we do, at every level.&lt;/p&gt;
+&lt;p&gt;I hope we get there some day.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React Europe 2015]]></title><description><![CDATA[After three full days of talks and chats on the topic of one specific javascript framework you would perhaps expect to have a feeling that…]]></description><link>https://eldh.co/2015-07-04-react-europe-2015/</link><guid isPermaLink="false">https://eldh.co/2015-07-04-react-europe-2015/</guid><pubDate>Sat, 04 Jul 2015 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After three full days of talks and chats on the topic of one specific javascript framework you would perhaps expect to have a feeling that you have covered every possible aspect of this certain framework, it’s present, past and future.&lt;/p&gt;
 &lt;p&gt;This is not the feeling I have after the first React Europe conference. Not at all. I’m leaving Paris after one hackathon and 19 very interesting talks, which covered a surprisingly wide range of topics, still leaving quite a few very relevant interesting areas completely untouched. There was simply not time to cover it all.&lt;/p&gt;
 &lt;p&gt;There was no talk on testing. There was no talk on module management. There was no talk on team workflow. There was no talk on deployment challenges. There was no talk on functional programming. Styling and design was touched only briefly. Etc.&lt;/p&gt;
 &lt;p&gt;We had more pressing issues to discuss.&lt;/p&gt;
@@ -281,27 +307,28 @@ $some-other-color: $some-color !default;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1325f4377974d51039cef10615f8011a/7ff60/nexus5.jpg&quot;
+    href=&quot;/static/1325f4377974d51039cef10615f8011a/297e9/nexus5.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.53822629969419%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBBf/EABUBAQEAAAAAAAAAAAAAAAAAAAIA/9oADAMBAAIQAxAAAAHJ+jSGVo//xAAYEAEBAQEBAAAAAAAAAAAAAAABAwIEAP/aAAgBAQABBQJ7KLu9X0LlJ65TVs8ss+AD/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Bh//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAMAAgMAAAAAAAAAAAAAAAABESIxMnGB/9oACAEBAAY/Aokkc34V7HlKavZEof/EABwQAQACAgMBAAAAAAAAAAAAAAEAESFhMVGBkf/aAAgBAQABPyH409xC0zxCK0cO4yCOSBOcT2laQ6J//9oADAMBAAIAAwAAABDA3//EABcRAAMBAAAAAAAAAAAAAAAAAAABEUH/2gAIAQMBAT8QqYOH/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAhEf/aAAgBAgEBPxBHuNt//8QAHBABAAMAAwEBAAAAAAAAAAAAAQARITFBkVGB/9oACAEBAAE/EKMtUNK/mwf2aLHkvJlz5Hf6JDzlsdeablBWu7jwyAgHgAJ//9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62.53822629969419%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBBf/EABUBAQEAAAAAAAAAAAAAAAAAAAIA/9oADAMBAAIQAxAAAAHJ+jSGVo//xAAYEAEBAQEBAAAAAAAAAAAAAAABAwIEAP/aAAgBAQABBQJ7KLu9X0LlJ65TVs8ss+AD/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAwACAwAAAAAAAAAAAAAAAAERIjEycYH/2gAIAQEABj8CiSRzfhXseUpq9kSh/8QAHBABAAICAwEAAAAAAAAAAAAAAQARITFRYYGR/9oACAEBAAE/IfjT3ELTPEIrRw43GQRyQJvE+0rSHBP/2gAMAwEAAgADAAAAEMDf/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARQf/aAAgBAwEBPxAQ5OX/xAAXEQADAQAAAAAAAAAAAAAAAAAAASER/9oACAECAQE/EGnsKf/EABwQAQACAgMBAAAAAAAAAAAAAAEAESFBMVGRgf/aAAgBAQABPxCjLVDJX1mF9miw8l5MveG/okPOWY5eablBWt3HhiAgHgAJ/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;&amp;quot;Nexus 4&amp;quot;&quot;
         title=&quot;&amp;quot;Nexus 4&amp;quot;&quot;
-        src=&quot;/static/1325f4377974d51039cef10615f8011a/c739e/nexus5.jpg&quot;
-        srcset=&quot;/static/1325f4377974d51039cef10615f8011a/8ee9c/nexus5.jpg 148w,
-/static/1325f4377974d51039cef10615f8011a/ebbe7/nexus5.jpg 295w,
-/static/1325f4377974d51039cef10615f8011a/c739e/nexus5.jpg 590w,
-/static/1325f4377974d51039cef10615f8011a/5413e/nexus5.jpg 885w,
-/static/1325f4377974d51039cef10615f8011a/4efde/nexus5.jpg 1180w,
-/static/1325f4377974d51039cef10615f8011a/7ff60/nexus5.jpg 1308w&quot;
+        src=&quot;/static/1325f4377974d51039cef10615f8011a/1c72d/nexus5.jpg&quot;
+        srcset=&quot;/static/1325f4377974d51039cef10615f8011a/a80bd/nexus5.jpg 148w,
+/static/1325f4377974d51039cef10615f8011a/1c91a/nexus5.jpg 295w,
+/static/1325f4377974d51039cef10615f8011a/1c72d/nexus5.jpg 590w,
+/static/1325f4377974d51039cef10615f8011a/a8a14/nexus5.jpg 885w,
+/static/1325f4377974d51039cef10615f8011a/fbd2c/nexus5.jpg 1180w,
+/static/1325f4377974d51039cef10615f8011a/297e9/nexus5.jpg 1308w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
@@ -316,27 +343,28 @@ $some-other-color: $some-color !default;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9f52126d3d8258c1782a6385aa466f39/7ff60/nexus11.jpg&quot;
+    href=&quot;/static/9f52126d3d8258c1782a6385aa466f39/297e9/nexus11.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.53822629969419%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABUcdiG6gmGa//xAAcEAACAgIDAAAAAAAAAAAAAAABAgADBBESEzL/2gAIAQEAAQUCYPzov65vcvQMh84yMav/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFX/8QAHxAAAgECBwAAAAAAAAAAAAAAAAEREhMCECEyQWGx/9oACAEBAAY/Anc1fZTi2+ZVcokm41J//8QAGhABAAMAAwAAAAAAAAAAAAAAAQARMSFBUf/aAAgBAQABPyF1x9VwRqrfX2AARse44xgxUKHOQKLS6DJ//9oADAMBAAIAAwAAABC8L//EABcRAQADAAAAAAAAAAAAAAAAAAABETH/2gAIAQMBAT8QyVP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREx/9oACAECAQE/ENQ4cP/EAB0QAAICAgMBAAAAAAAAAAAAAAERAFEhMWFxkdH/2gAIAQEAAT8QKYDjEBdAQEwPoxXHkFWCYAsETXBtDgR7mRa7s8mDOhEi9T//2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62.53822629969419%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABUcdiG6gmGa//xAAcEAACAgIDAAAAAAAAAAAAAAACAwABBBESEzL/2gAIAQEAAQUCIT5of1ze48KIL84wFav/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFX/8QAHxAAAgECBwAAAAAAAAAAAAAAAAEREhMCECEyQWGx/9oACAEBAAY/Anc1fZTi2+ZVcokm41J//8QAGhABAAMBAQEAAAAAAAAAAAAAAQARMUFRIf/aAAgBAQABPyFlx9V8I1Vvn2AARsexxjBioU3IFFpdBk//2gAMAwEAAgADAAAAELwv/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERMf/aAAgBAwEBPxDJU//EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQIBAT8Q6Thv/8QAHRABAAICAgMAAAAAAAAAAAAAAQARIVFhkTFx0f/aAAgBAQABPxBDA4xA3oIFYH0Y1x1CrCsDYk8cHdFwTzdqa97eWGdEpK7T/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;&amp;quot;Nexus 4&amp;quot;&quot;
         title=&quot;&amp;quot;Nexus 4&amp;quot;&quot;
-        src=&quot;/static/9f52126d3d8258c1782a6385aa466f39/c739e/nexus11.jpg&quot;
-        srcset=&quot;/static/9f52126d3d8258c1782a6385aa466f39/8ee9c/nexus11.jpg 148w,
-/static/9f52126d3d8258c1782a6385aa466f39/ebbe7/nexus11.jpg 295w,
-/static/9f52126d3d8258c1782a6385aa466f39/c739e/nexus11.jpg 590w,
-/static/9f52126d3d8258c1782a6385aa466f39/5413e/nexus11.jpg 885w,
-/static/9f52126d3d8258c1782a6385aa466f39/4efde/nexus11.jpg 1180w,
-/static/9f52126d3d8258c1782a6385aa466f39/7ff60/nexus11.jpg 1308w&quot;
+        src=&quot;/static/9f52126d3d8258c1782a6385aa466f39/1c72d/nexus11.jpg&quot;
+        srcset=&quot;/static/9f52126d3d8258c1782a6385aa466f39/a80bd/nexus11.jpg 148w,
+/static/9f52126d3d8258c1782a6385aa466f39/1c91a/nexus11.jpg 295w,
+/static/9f52126d3d8258c1782a6385aa466f39/1c72d/nexus11.jpg 590w,
+/static/9f52126d3d8258c1782a6385aa466f39/a8a14/nexus11.jpg 885w,
+/static/9f52126d3d8258c1782a6385aa466f39/fbd2c/nexus11.jpg 1180w,
+/static/9f52126d3d8258c1782a6385aa466f39/297e9/nexus11.jpg 1308w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
@@ -352,27 +380,28 @@ $some-other-color: $some-color !default;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b68b0d020a783df5bd3a5e9e67a2e7f1/7ff60/nexus7.jpg&quot;
+    href=&quot;/static/b68b0d020a783df5bd3a5e9e67a2e7f1/297e9/nexus7.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 62.46177370030581%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAH/2gAMAwEAAhADEAAAAa9KyRo5E5Z//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAECAxL/2gAIAQEAAQUCxSgVSqnmhWzpi1tH/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECERL/2gAIAQMBAT8BUqNH/8QAGBEAAgMAAAAAAAAAAAAAAAAAABICAxH/2gAIAQIBAT8BlWwmH//EABsQAAICAwEAAAAAAAAAAAAAAAABIZECEUES/9oACAEBAAY/Am8mrIygb9I5RyiHo//EABwQAAMAAgMBAAAAAAAAAAAAAAABEUFhITGRUf/aAAgBAQABPyFtS4SqF/0MiQGcnweBq8xDItJH/9oADAMBAAIAAwAAABBgP//EABgRAAIDAAAAAAAAAAAAAAAAAAABETFB/9oACAEDAQE/EKSQ54f/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oACAECAQE/EA6YQwb/xAAeEAEAAgIBBQAAAAAAAAAAAAABABEhMbFBYXHh8P/aAAgBAQABPxA2CyeSNQIYwNusDE3auxE5VXb6o/Q8SmKy6EcT/9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 62.46177370030581%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgP/2gAMAwEAAhADEAAAAa9KyWduROH/xAAYEAADAQEAAAAAAAAAAAAAAAAAAQIDEv/aAAgBAQABBQLFKBVKqeaFbOmLW0f/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIREv/aAAgBAwEBPwFSo0f/xAAYEQACAwAAAAAAAAAAAAAAAAAAEgIDEf/aAAgBAgEBPwGVbCYf/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAEhkQIRQRL/2gAIAQEABj8CbyasjKBv0jlHKIej/8QAHBAAAwACAwEAAAAAAAAAAAAAAAERQWEhMZFR/9oACAEBAAE/IW1LhKoX/QyJAZyfB4GrzEMi0kf/2gAMAwEAAgADAAAAEGQ//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAxQf/aAAgBAwEBPxDEEl5f/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARQf/aAAgBAgEBPxDoYYwb/8QAHhABAAICAQUAAAAAAAAAAAAAAQARITGxQWFx4fD/2gAIAQEAAT8QNgsnkjUCGMDbrAxN2rsROVV2+qP0PEpisuhHE//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;&amp;quot;Nexus 4 &amp;amp; iPhone 4S&amp;quot;&quot;
         title=&quot;&amp;quot;Nexus 4 &amp;amp; iPhone 4S&amp;quot;&quot;
-        src=&quot;/static/b68b0d020a783df5bd3a5e9e67a2e7f1/c739e/nexus7.jpg&quot;
-        srcset=&quot;/static/b68b0d020a783df5bd3a5e9e67a2e7f1/8ee9c/nexus7.jpg 148w,
-/static/b68b0d020a783df5bd3a5e9e67a2e7f1/ebbe7/nexus7.jpg 295w,
-/static/b68b0d020a783df5bd3a5e9e67a2e7f1/c739e/nexus7.jpg 590w,
-/static/b68b0d020a783df5bd3a5e9e67a2e7f1/5413e/nexus7.jpg 885w,
-/static/b68b0d020a783df5bd3a5e9e67a2e7f1/4efde/nexus7.jpg 1180w,
-/static/b68b0d020a783df5bd3a5e9e67a2e7f1/7ff60/nexus7.jpg 1308w&quot;
+        src=&quot;/static/b68b0d020a783df5bd3a5e9e67a2e7f1/1c72d/nexus7.jpg&quot;
+        srcset=&quot;/static/b68b0d020a783df5bd3a5e9e67a2e7f1/a80bd/nexus7.jpg 148w,
+/static/b68b0d020a783df5bd3a5e9e67a2e7f1/1c91a/nexus7.jpg 295w,
+/static/b68b0d020a783df5bd3a5e9e67a2e7f1/1c72d/nexus7.jpg 590w,
+/static/b68b0d020a783df5bd3a5e9e67a2e7f1/a8a14/nexus7.jpg 885w,
+/static/b68b0d020a783df5bd3a5e9e67a2e7f1/fbd2c/nexus7.jpg 1180w,
+/static/b68b0d020a783df5bd3a5e9e67a2e7f1/297e9/nexus7.jpg 1308w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
