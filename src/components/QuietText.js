@@ -5,6 +5,9 @@ import styled from '@emotion/styled'
 const QuietP = styled('p')(css`
   color: #555;
   font-size: 13px;
+  @media (prefers-color-scheme: dark) {
+    color: #aaa;
+  }
 `)
 
 class QuietText extends React.Component {

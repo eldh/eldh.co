@@ -38,12 +38,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-41786834-1',
-      },
-    },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     {
