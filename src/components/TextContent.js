@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 
 const styles = css`
-  max-width: 600px;
+  max-width: 540px;
   padding: 1rem;
   margin: 0 auto;
 `

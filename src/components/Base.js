@@ -65,6 +65,24 @@ class Base extends React.Component {
             p,
             ul {
               margin-bottom: 1rem;
+              & + hr {
+                margin-top: 1rem;
+              }
+            }
+            ul {
+              margin-left: 2em;
+              @media screen and (max-width: 540px) {
+                margin-left: 1em;
+              }
+            }
+
+            hr {
+              margin-bottom: 2rem;
+              margin-top: 2rem;
+              border-style: solid;
+              border-color: #eee;
+              border-width: 0;
+              border-top-width: 1px;
             }
             a,
             a:visited {
@@ -77,13 +95,14 @@ class Base extends React.Component {
             body {
               background-color: #fff;
               color: #444;
+              font-size: 16px;
               line-height: 1.475;
               font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
                 'Roboto', sans-serif, 'Apple Color Emoji', 'Segoe UI Symbol';
             }
             @media (prefers-color-scheme: dark) {
               body {
-                background-color: #222;
+                background-color: #111;
                 color: #eee;
                 overscroll-behavior: none;
                 :before {
