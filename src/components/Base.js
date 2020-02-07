@@ -99,6 +99,7 @@ class Base extends React.Component {
               line-height: 1.475;
               font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
                 'Roboto', sans-serif, 'Apple Color Emoji', 'Segoe UI Symbol';
+              font: -apple-system-body;
             }
             @media (prefers-color-scheme: dark) {
               body {

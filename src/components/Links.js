@@ -14,6 +14,7 @@ const ulStyles = css`
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-left: 0;
 `
 const links = [
   {

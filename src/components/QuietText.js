@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 
 const QuietP = styled('p')(css`
   color: #555;
-  font-size: 13px;
+  font-size: 0.93em;
   @media (prefers-color-scheme: dark) {
     color: #aaa;
   }
