@@ -29,7 +29,7 @@ class Index extends React.Component {
             {
               name: 'description',
               content:
-                'The website of Andreas Eldh, a freelance designer, developer and problem solver from Stockholm.',
+                'The website of Andreas Eldh, a designer, developer and problem solver from Stockholm.',
             },
           ]}
           htmlAttributes={{
@@ -40,7 +40,7 @@ class Index extends React.Component {
           <Logo />
           <p>
             {
-              "I'm Andreas Eldh, a freelance designer, developer and problem solver from Stockholm."
+              "I'm Andreas Eldh, a designer, developer and problem solver from Stockholm."
             }
           </p>
           <p>
@@ -50,10 +50,8 @@ class Index extends React.Component {
           </p>
           <p>
             <span>
-              {
-                "I want to make people's lives better. If you need help with something interesting, "
-              }
-              <a href="mailto:andreas.eldh@gmail.com">{'get in touch!'}</a>
+              Currently working on
+              <a href="https://www.linear.app"> Linear</a>
             </span>
           </p>
           <Links />
