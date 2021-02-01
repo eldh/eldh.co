@@ -1,7 +1,10 @@
 import React from 'react'
 
 class AELogo extends React.Component {
-  state = { fill: 0 }
+  constructor(props) {
+    super(props)
+    this.state = { fill: 0 }
+  }
   componentDidMount() {
     this.interval = setInterval(
       () => this.setState(({ fill }) => ({ fill: fill >= 360 ? 0 : fill + 1 })),
